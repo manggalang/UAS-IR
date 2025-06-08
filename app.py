@@ -22,8 +22,8 @@ SNIPPET_MAX_LENGTH = 250
 # --- Inisialisasi NLTK dan Sastrawi (dilakukan sekali) ---
 @st.cache_resource
 def initialize_nlp_resources():
-    nltk.download('punkt', quiet=True)
-    nltk.download('stopwords', quiet=True)
+    nltk.download('punkt_tab')
+    nltk.download('stopwords')
     stemmer_factory = StemmerFactory()
     stemmer_instance = stemmer_factory.create_stemmer()
     stop_words_set = set(stopwords.words('indonesian'))
