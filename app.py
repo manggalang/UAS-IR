@@ -11,7 +11,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 
 # --- Konfigurasi Halaman Streamlit ---
-st.set_page_config(page_title="Mini Search Engine", layout="centered")
+st.set_page_config(page_title="Mini NLP and Search Engine", layout="centered")
 
 # --- Konstanta ---
 SEARCH_CSV_PATH = "data/raw-text.csv"
@@ -213,7 +213,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.markdown('<div class="title">🔎 Mini Search Engine</div>', unsafe_allow_html=True)
+st.markdown('<div class="title">🔎 Mini NLP and Search Engine</div>', unsafe_allow_html=True)
 
 # --- Pemuatan Data Global ---
 SEARCH_DF, SEARCH_TFIDF_MATRIX, SEARCH_VECTORIZER = load_search_data(SEARCH_CSV_PATH)
